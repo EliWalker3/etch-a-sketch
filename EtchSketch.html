@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="etchstyles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&display=swap" rel="stylesheet">
+    <title>Etch-a-sketch</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Etch-a-Sketch</h1>
+    </header>
+    <div class="container">
+        <div class="adjustments">
+            <input id='color' type="color" />
+            <button class="color">Color</button>
+            <button class="rainbow">Rainbow</button>
+            <button class="reset">Reset</button>
+            <p class="rangeValue">16 x 16</p>
+            <input type="range" id="gridSize" value="16" min="1" max="64" />
+        </div>
+        <div class="grid"></div>
+    </div>
+</body>
+<script src="etchSketch.js"></script>
+</html>
